@@ -33,41 +33,6 @@ class DataProviderXService implements DataProviderInterface
         return $this->filteredTransactions;
     }
 
-    protected function readFileGenerator() {
-        $jsonContents = file_get_contents($this->filePath);
-        if ($jsonContents === false) {
-            throw new \RuntimeException("Cannot read the file: {$this->filePath}");
-        }
-
-        $dataObjects = json_decode($jsonContents, true);
-        if (!is_array($dataObjects)) {
-            throw new \UnexpectedValueException("The decoded JSON structure is not an array.");
-        }
-
-        foreach ($dataObjects as $dataObject) {
-            yield $dataObject;
-        }
-    }
-
-
-
-    protected function processBuffer(&$buffer, array $filters, array &$results, $flush = false): string {
-        // This is a simplified logic for demonstration purposes.
-        // You'll need to implement JSON chunk processing based on your file's structure.
-        // For a real application, consider using a streaming JSON parser.
-
-        if ($flush) {
-            // Assuming the remaining buffer contains a complete JSON object
-            $data = json_decode('[' . $buffer . ']', true);
-            if ($data) {
-                // Apply filters to $data and add to $results
-            }
-            $buffer = '';
-        }
-
-        // Return the unprocessed part of the buffer or an empty string if everything was processed
-        return $buffer;
-    }
 
     protected function applyFilters($transaction, $statusCode, $balanceMin, $balanceMax, $currency) {
         $mappedStatusCode = $statusCode ? $this->mapStatusCode($statusCode) : null;

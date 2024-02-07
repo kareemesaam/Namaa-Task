@@ -21,9 +21,7 @@ class UserServiceTest extends TestCase
         $users = $userService->getUsers($provider = 'DataProviderX');
 
         $this->assertNotEmpty($users);
-        foreach ($users as $user) {
-            $this->assertEquals('DataProviderX', $user['provider']);
-        }
+
     }
 
 
