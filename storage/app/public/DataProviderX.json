@@ -1,0 +1,12 @@
+[
+    {"parentAmount": 100, "Currency": "USD", "parentEmail": "parent1@parent.eu", "statusCode": 1, "registerationDate": "2020-01-01", "parentIdentification": "id1"},
+    {"parentAmount": 200, "Currency": "EUR", "parentEmail": "parent2@parent.eu", "statusCode": 2, "registerationDate": "2020-01-02", "parentIdentification": "id2"},
+    {"parentAmount": 300, "Currency": "USD", "parentEmail": "parent3@parent.eu", "statusCode": 3, "registerationDate": "2020-01-03", "parentIdentification": "id3"},
+    {"parentAmount": 400, "Currency": "USD", "parentEmail": "parent4@parent.eu", "statusCode": 1, "registerationDate": "2020-01-04", "parentIdentification": "id4"},
+    {"parentAmount": 150, "Currency": "EUR", "parentEmail": "parent5@parent.eu", "statusCode": 2, "registerationDate": "2020-01-05", "parentIdentification": "id5"},
+    {"parentAmount": 250, "Currency": "USD", "parentEmail": "parent6@parent.eu", "statusCode": 3, "registerationDate": "2020-01-06", "parentIdentification": "id6"},
+    {"parentAmount": 350, "Currency": "EUR", "parentEmail": "parent7@parent.eu", "statusCode": 1, "registerationDate": "2020-01-07", "parentIdentification": "id7"},
+    {"parentAmount": 450, "Currency": "USD", "parentEmail": "parent8@parent.eu", "statusCode": 2, "registerationDate": "2020-01-08", "parentIdentification": "id8"},
+    {"parentAmount": 550, "Currency": "EUR", "parentEmail": "parent9@parent.eu", "statusCode": 3, "registerationDate": "2020-01-09", "parentIdentification": "id9"},
+    {"parentAmount": 650, "Currency": "USD", "parentEmail": "parent10@parent.eu", "statusCode": 1, "registerationDate": "2020-01-10", "parentIdentification": "id10"}
+]
